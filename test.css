@@ -1,41 +1,52 @@
+.wrapper {
+  width: 1040px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 40px;
+  font-family: arial;
+}
+
+img {
+  width: 200px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "top-one top-two top-three top-four""bottom-one bottom-two bottom-three bottom-four";
-  width: 1080px;
-  height: 600px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "top-one top-two top-three top-four"
+  "bottom-one bottom-two bottom-three bottom-four";
+  grid-gap: 20px;
+  width: 100%;
+  height: 70%;
+}
+
+.card {
+  background-color: #438abf;
 }
 
 .top-one {
-  background-color: #438abf;
   grid-area: top-one;
 }
 .top-two {
-  background-color: #438abf;
   grid-area: top-two;
 }
 .top-three {
-  background-color: #438abf;
   grid-area: top-three;
 }
 .top-four {
-  background-color: #438abf;
   grid-area: top-four;
 }
 .bottom-one {
-  background-color: #438abf;
-  grid-area: bottom-one;
+  grid-area:bottom-one;
 }
 .bottom-two {
-  background-color: #438abf;
   grid-area: bottom-two;
 }
 .bottom-three {
-  background-color: #438abf;
   grid-area: botom-three;
 }
 .bottom-four {
-  background-color: #438abf;
   grid-area: bottom-four;
 }
